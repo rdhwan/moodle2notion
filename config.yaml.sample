@@ -1,0 +1,8 @@
+config:
+  moodle:
+    host: https://elearning.youracademy.ac.id/
+    username: username
+    password: superStronkPassword
+  notion:
+    api_key: secret_yourNotionApiSecret
+    database: yourNotionDatabase
