@@ -63,7 +63,7 @@ def job() -> None:
 
 if __name__ == "__main__":
     print(
-        f"{datetime.datetime.now().ctime()}: Watcher started. Will update every 30 minutes."
+        f"{datetime.datetime.now().ctime()}: Application startup complete. Will update every 30 minutes."
     )
     schedule.every(30).minutes.do(job)
 
