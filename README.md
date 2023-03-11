@@ -1,4 +1,5 @@
 # Moodle2Notion Integration
+![image](https://user-images.githubusercontent.com/89518861/224494170-2b4512fc-a1d4-422c-90a4-37b500206e5a.png)
 
 Moodle2Notion is a project that allows you to connect your Moodle API from your school to a Notion database. This integration will enable you to sync your Moodle timeline into a simple Notion To-Do-List (every 30 minutes).
 
