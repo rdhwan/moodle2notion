@@ -29,6 +29,8 @@ def job() -> None:
 
     try:
         timeline_data = moodle.get_timeline(config["moodle"]["host"], CURR_TOKEN)
+        print(f"{datetime.datetime.now().ctime()} : Trying to use last token")
+
     except moodle.MoodleError as r:
         CURR_TOKEN = moodle.get_token(
             config["moodle"]["host"],
@@ -40,7 +42,8 @@ def job() -> None:
         timeline_data = moodle.get_timeline(config["moodle"]["host"], CURR_TOKEN)
 
     if not timeline_data:
-        print("An error occured when getting data from Moodle")
+        print("The timeline is probably empty or the server error.")
+        return
 
     query = notion.query_database(
         config["notion"]["api_key"], config["notion"]["database"]
