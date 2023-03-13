@@ -3,6 +3,7 @@ import time
 import yaml
 from api import moodle, notion
 import schedule
+import logging
 
 with open("config.yaml", "r") as f:
     config = yaml.safe_load(f)["config"]
